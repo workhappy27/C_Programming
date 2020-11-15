@@ -1,5 +1,7 @@
 Socket Programming in detail:-
 
+https://illumos.org/man/3socket/sockaddr_ll
+
 Socket (Create an endpoint for communication):-
 ---------------------------------------------
 	int ioctl_sock	= socket(AF_PACKET, int socket_type, int protocol);
