@@ -1,6 +1,7 @@
 Socket Programming in detail:-
 
-https://illumos.org/man/3socket/sockaddr_ll
+More details on sockadd types https://illumos.org/man/3socket/sockaddr_ll
+Port number definitions: http://www.networksorcery.com/enp/protocol/ip/ports05000.htm
 
 Socket (Create an endpoint for communication):-
 ---------------------------------------------
