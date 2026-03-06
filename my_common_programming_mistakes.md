@@ -6,3 +6,6 @@ Some lines lack the required semicolon terminator, which causes compilation erro
 #### Missing braces in if statements
 Braces {} are not used for some if blocks; this may cause logical errors if multiple statements are intended to be included.  
 Several if statements lack explicit braces, making the code error‑prone when extending or modifying the block.  
+
+#### Missing arithmetic operands.
+Missing multiplication operan 2i, instead of 2*i.
