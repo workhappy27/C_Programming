@@ -8,4 +8,7 @@ Braces {} are not used for some if blocks; this may cause logical errors if mult
 Several if statements lack explicit braces, making the code error‑prone when extending or modifying the block.  
 
 #### Missing arithmetic operands.
-Missing multiplication operan 2i, instead of 2*i.
+Missing multiplication operand in arithmetic operation 2i, instead of 2*i.
+
+#### Missing break statement
+Missing break statement in one or more switch cases, causing unintended fall-through
