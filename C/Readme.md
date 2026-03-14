@@ -1,4 +1,4 @@
 
 #### Datatype  
     
-#### Dervived datatype
+#### Derived datatype
