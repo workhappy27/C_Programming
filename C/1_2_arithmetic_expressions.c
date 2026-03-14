@@ -25,13 +25,15 @@ int main() {
 * 32°F = freezing point of water
 * 212°F = boiling point of water
 * F → C:
-* C= 5/9 × (F−32)
+* C= (5 × (F−32)) / 9
 *
 * Celsius, also known as the centigrade scale, is used in most of the world, including India
 * 0°C = freezing point of water
 * 100°C = boiling point of water
-* F= (9/5xC) + 32
+* C → F:
+* F= (9/5)xC) + 32
 *
+
 output:
 Fahrenheit  Celsius
 ---------------------
