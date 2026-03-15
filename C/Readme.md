@@ -9,5 +9,7 @@
 local variable are called automatic variables.  
 Variables external to functions are called external variables declared with *extern keyword* .  
 
+#### Constants
+
   
 #### Derived datatype
