@@ -14,6 +14,12 @@ Character constants ``#define CHAR_CONSTANTS 'c'  ``
 String constants ```#define STRING_CONSTANTS "c"   ```  
 Enumeration constants ```enum boolean { NO, YES }  ```  
 
-#####
+##### Arithmetic operators  
+``` +, -, *, / ```  
 
+##### Relational and Logical operators  
+Relational operators are ``` > >= < <= ```  
+Equality operators are ``` == and != ```  
+Logical operators are ``` && and || ```  
+  
 #### Derived datatype
