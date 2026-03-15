@@ -22,5 +22,10 @@ Enumeration constants ```enum boolean { NO, YES }  ```
 Relational operators are ``` > >= < <= ```  
 Equality operators are ``` == and != ```  
 Logical operators are ``` && and || ```  
-  
+
+##### Type conversions  
+Convert a narrower operand into a wider operand.  
+i) char - int   
+     char c = '7';  
+     int n = c-'0'; Though int n = c-48; is corrent, it may be intepretted as magic number.   
 #### Derived datatype
