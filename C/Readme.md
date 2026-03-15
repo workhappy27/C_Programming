@@ -10,7 +10,7 @@ local variable are called automatic variables.
 Variables external to functions are called external variables declared with *extern keyword* .  
 
 ##### Constants
-**Character constants**  
+***Character constants***  
 #define CHAR_CONSTANTS 'c'  
 **String constants**  
 #define STRING_CONSTANTS "c"   
