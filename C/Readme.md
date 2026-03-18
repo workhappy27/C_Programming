@@ -28,4 +28,11 @@ Convert a narrower operand into a wider operand.
 i) char - int   
      char c = '7';  
      int n = c-'0'; Though int n = c-48; is corrent, it may be intepretted as magic number.   
+
+· If either operand is long double, convert the other to long double.   
+· Otherwise, if either operand is double, convert the other to double.   
+· Otherwise, if either operand is float, convert the other to float.   
+· Otherwise, convert char and short to int.   
+· Then, if either operand is long, convert the other to long.  
+  
 #### Derived datatype
