@@ -34,5 +34,13 @@ i) char - int
 · Otherwise, if either operand is float, convert the other to float.   
 · Otherwise, convert char and short to int.   
 · Then, if either operand is long, convert the other to long.  
+
+##### Bitwise Operators  
+& bitwise AND  
+| bitwise inclusive OR  
+^ bitwise exclusive OR  
+<< left shift  
+>> right shift  
+~ one's complement (unary)  
   
 #### Derived datatype
