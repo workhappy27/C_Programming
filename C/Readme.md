@@ -40,7 +40,7 @@ i) char - int
 | bitwise inclusive OR  
 ^ bitwise exclusive OR  
 << left shift  
->> right shift  
-~ one's complement (unary)  
+ >> right shift  
+ ~ one's complement (unary)  
   
 #### Derived datatype
