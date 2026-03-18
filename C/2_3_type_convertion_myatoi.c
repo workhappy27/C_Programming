@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* convert string into integer */
+/* Non-standard convertion of string into integer from right to left*/
 int my_atoi(char c[])
 {
 int int_value=0, n=0, base=1;
