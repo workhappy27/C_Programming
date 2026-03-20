@@ -41,6 +41,7 @@ int gap=0;
         printf("%d ", arr[k]);
     printf("\n");
 }
+
 /* Output:
 The inner for loop condition (j >= gap && arr[j - gap] > key) compares elements
 that are gap apart and shifts them forward by gap.
