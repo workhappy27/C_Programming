@@ -21,6 +21,10 @@ void bytes_to_hex_string(const unsigned char byte[4], char out[9]) {
     snprintf(out, 9, "%02X%02X%02X%02X", byte[3], byte[2], byte[1], byte[0]);
 }
 
+void bytes_to_hex_string_reverse(const unsigned char byte[4], char out[9]) {
+    snprintf(out, 9, "%02X%02X%02X%02X", byte[0], byte[1], byte[2], byte[3]);
+}
+
 int main()
 {
 uint32_t n=12341234;
@@ -29,8 +33,11 @@ char string[9] = {0};
 
     my_atoi(n, s);
     bytes_to_hex_string(s, string);
-
     printf("string is: %s\n", string);
+
+    bytes_to_hex_string_reverse(s, string);
+    printf("reverse string is: %s\n", string);
+
     return 0;
 }
 /*
@@ -45,5 +52,5 @@ sign extension occurs.
 0xff0000, n=0xbc4ff2, c=0xbc s[element]: 0xbc
 0xff000000, n=0xbc4ff2, c=0x0 s[element]: 0x0
 string is: 00BC4FF2
-
+reverse string is: F24FBC00
 */
