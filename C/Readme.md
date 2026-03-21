@@ -42,5 +42,11 @@ i) char - int
 ``` << ```left shift  
 ``` >>``` right shift  
 ``` ~ ```one's complement (unary)  
+
+##### Variables
+static or global variable  
+external variable  
+local or automatic variable  
+register variable  
   
 #### Derived datatype
