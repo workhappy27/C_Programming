@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdint.h>
+/* Program to convert integer to ASCII (itoa) */
+void my_atoi(uint32_t n, unsigned char s[4])
+{
+int i=0, element=0;
+unsigned char c='\0';
+uint32_t mask = 0xFF000000u;  /* type suffix with unsigned int */
+
+    for(i=24; i>=0; i=i-8) {
+        mask = (0xFF000000u>>i);
+        c = (unsigned char) ((n & mask) >> 24-i);
+        s[element++] = c;
+        printf("0x%x, n=0x%x, c=0x%x s[element]: 0x%x\n", mask, n, c, s[element-1]);
+    }
+    s[element] = '\0';
+
+}
+
+void bytes_to_hex_string(const unsigned char byte[4], char out[9]) {
+    snprintf(out, 9, "%02X%02X%02X%02X", byte[3], byte[2], byte[1], byte[0]);
+}
+
+int main()
+{
+uint32_t n=12341234;
+unsigned char s[4] = {0};
+char string[9] = {0};
+
+    my_atoi(n, s);
+    bytes_to_hex_string(s, string);
+
+    printf("string is: %s\n", string);
+    return 0;
+}
+/*
+char s[10];
+When you store 0xF2 (242) or 0xBC (188) into a signed char, they become negative
+values (because 0xF2 and 0xBC have the top bit set). Later, when you print with
+%x the char argument is integer-promoted to int, and if it is negative,
+sign extension occurs.
+
+0xff, n=0xbc4ff2, c=0xf2 s[element]: 0xf2
+0xff00, n=0xbc4ff2, c=0x4f s[element]: 0x4f
+0xff0000, n=0xbc4ff2, c=0xbc s[element]: 0xbc
+0xff000000, n=0xbc4ff2, c=0x0 s[element]: 0x0
+string is: 00BC4FF2
+
+*/
