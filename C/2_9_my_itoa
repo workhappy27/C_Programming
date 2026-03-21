@@ -53,4 +53,23 @@ sign extension occurs.
 0xff000000, n=0xbc4ff2, c=0x0 s[element]: 0x0
 string is: 00BC4FF2
 reverse string is: F24FBC00
+
+Single function that returns a printable string
+
+void u32_hex_msb_first(uint32_t n, char out[9]) {
+    (void)snprintf(out, 9, "%02X%02X%02X%02X",
+                   (unsigned)((n >> 24) & 0xFFu),
+                   (unsigned)((n >> 16) & 0xFFu),
+                   (unsigned)((n >>  8) & 0xFFu),
+                   (unsigned)((n >>  0) & 0xFFu));
+}
+
+void u32_hex_lsb_first(uint32_t n, char out[9]) {
+    (void)snprintf(out, 9, "%02X%02X%02X%02X",
+                   (unsigned)((n >>  0) & 0xFFu),
+                   (unsigned)((n >>  8) & 0xFFu),
+                   (unsigned)((n >> 16) & 0xFFu),
+                   (unsigned)((n >> 24) & 0xFFu));
+}
+
 */
