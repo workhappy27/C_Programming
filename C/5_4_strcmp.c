@@ -11,6 +11,8 @@
 
 int my_strcmp1(char *s, char *t)
 {
+int i=0;
+    
     while(s[i] != '\0' && t[i] != '\0') {
         if( s[i] != t[i])
             return s[i] - t[i];
@@ -22,8 +24,6 @@ int my_strcmp1(char *s, char *t)
 
 int my_strcmp2(char *s, char *t)
 {
-int i=0;
-
     while(*s != '\0' && *t != '\0') {
         if( *s != *t)
             return *s - *t;
