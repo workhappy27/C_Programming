@@ -14,7 +14,10 @@
 *
 */
 //char *lineptr[MAXLINES];
-char lineptr[MAXLINES];
+/* You cannot use getline() with a fixed array buffer.
+* Below declaration is wrong, even though it works.
+*/
+char lineptr[MAXLEN];
 
 int readlines(char *lineptr, int nlines)
 {
@@ -38,7 +41,6 @@ int nchar;
     printf("%d \n", nchar);
     return 0;
 }
-
 /*
 i) char ** means:
     👉 an array of strings (char **argv)
@@ -46,10 +48,13 @@ i) char ** means:
 
     Ex: char **lines = malloc(10 * sizeof(char *));
 
-i) char *ptr[10];
+ii) char *ptr[10];
     👉 an array of pointers to char
 
-char * (*)[10] means:
+iii) char (*)[MAXLEN]
+    👉 pointer to an array
+
+iv) char * (*)[10]
     👉 Pointer to an array of 10 char*
 
 */
