@@ -7,7 +7,9 @@
 *double* double-precision floating point  
 *size_t* an unsigned integer type and an implementation‑defined unsigned integer type  
          designed to hold the size of any object in memory  
-  
+32‑bit system → 32‑bit unsigned  
+64‑bit system → 64‑bit unsigned  
+   
 local variable are called automatic variables.  
 Variables external to functions are called external variables declared with *extern keyword* .  
 
