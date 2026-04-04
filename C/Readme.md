@@ -2,10 +2,10 @@
 ##### Datatype  
 *char* character - a single byte  
 *short* short integer  
-*int* integers
+*int* integers, exactly 32 bits, not platform dependent.  
 *long* long integer  
 *double* double-precision floating point  
-*size_t* an unsigned integer type and an implementation‑defined unsigned integer type  
+*size_t* Platform dependent an unsigned integer type and an implementation‑defined unsigned integer type  
          designed to hold the size of any object in memory  
 32‑bit system → 32‑bit unsigned  
 64‑bit system → 64‑bit unsigned  
