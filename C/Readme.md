@@ -5,7 +5,9 @@
 *int* integers
 *long* long integer  
 *double* double-precision floating point  
-
+*size_t* an unsigned integer type and an implementation‑defined unsigned integer type  
+         designed to hold the size of any object in memory  
+  
 local variable are called automatic variables.  
 Variables external to functions are called external variables declared with *extern keyword* .  
 
